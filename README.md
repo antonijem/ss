@@ -9,3 +9,41 @@ This repository contains the project assignments for the Systems Software course
 ## Requirements
 * The project is implemented in C++ and is designed to run on a Linux operating system.
 * The code should be compiled and executed as a console application.
+
+## Usage
+# Assembler
+To assemble an input file, use the following command:
+
+./assembler -o <output_file> <input_file>
+
+Example:
+
+./assembler -o output.o input.s
+
+# Linker
+To link multiple object files into a single executable, use the following command:
+
+./linker -o <executable_file> <input_files>
+
+Example:
+
+./linker -o executable output1.o output2.o
+
+# Emulator
+To run the executable file on the emulator, use the following command:
+
+./emulator <executable_file>
+
+Example:
+
+./emulator executable
+
+# File Structure
+* assembler/: Contains the source code for the assembler.
+* linker/: Contains the source code for the linker.
+* emulator/: Contains the source code for the emulator.
+* tests/: Contains test programs and scripts.
+
+# Testing
+
+Test scripts and sample programs are provided in the tests directory. 
